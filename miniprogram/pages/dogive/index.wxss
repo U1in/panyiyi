@@ -1,11 +1,14 @@
 .container {
   height: 100%;
   width: 100%;
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   background: #e7e7e7;
+  overflow: auto;
+  position: relative;
 }
 .search-container {
   height: 50px;
@@ -16,6 +19,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 .search-placeholder {
   font-size: 14px;

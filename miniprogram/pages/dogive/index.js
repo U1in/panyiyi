@@ -7,7 +7,8 @@ Page({
   data: {
     badge: '',
     query: '',
-    images: []
+    images: [],
+    page: 1,
   },
   inputSearch(e) {
     this.setData({
@@ -23,6 +24,15 @@ Page({
       });
     });
   },
+  showMore () {
+    db.collection('picture').orderBy('Plike', 'desc').orderBy('Pdownload', 'desc').skip(20 * this.data.page).limit(20).get().then(res => {
+      console.log(res);
+      this.setData({
+        images: this.data.images.concat(res.data),
+        page: this.data.page + 1,
+      });
+    });
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -33,11 +43,10 @@ Page({
     wx.setNavigationBarTitle({
       title: decodeURI(options.query),
     });
-    db.collection('picture').get().then(res => {
+    db.collection('picture').orderBy('Plike', 'desc').orderBy('Pdownload', 'desc').limit(20).get().then(res => {
       this.setData({
         images: res.data,
       })
-      console.log(this.data.images);
     })
   },
 

@@ -2,6 +2,7 @@
   "usingComponents": {
     "my-item": "../../components/item/index",
     "my-keyword": "../../components/keyword/index",
-    "my-give": "../../components/give/index"
+    "my-give": "../../components/give/index",
+    "my-hint": "../../components/hint/index"
   }
 }

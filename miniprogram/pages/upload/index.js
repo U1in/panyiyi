@@ -78,19 +78,21 @@ Page({
    * 添加标签函数
    */
   keyWordString2Array () {
-    if (this.data.keyWordString[0] == "#") {
-      wx.showToast({
-        title: "不允许添加徽章。",
-        mask: true,
-        image: '../../static/fail.png'
-      })
-    }
-    else {
-      this.data.keyWordArray.push(this.data.keyWordString);
-      this.setData({
-        keyWordArray: this.data.keyWordArray,
-        keyWordString: '',
-      })
+    if (this.data.keyWordString != '') {
+      if (this.data.keyWordString[0] == "#") {
+        wx.showToast({
+          title: "不允许添加徽章。",
+          mask: true,
+          image: '../../static/fail.png'
+        })
+      }
+      else {
+        this.data.keyWordArray.push(this.data.keyWordString);
+        this.setData({
+          keyWordArray: this.data.keyWordArray,
+          keyWordString: '',
+        })
+      }
     }
   },
   /**

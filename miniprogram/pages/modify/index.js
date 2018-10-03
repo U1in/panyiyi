@@ -6,13 +6,24 @@ Page({
    * 页面的初始数据
    */
   data: {
-    images: []
+    images: [],
+    page: 1,
+  },
+  showMore () {
+    db.collection('picture').orderBy('time', 'desc').skip(20 * this.data.page).limit(20).get().then(res => {
+      console.log(res);
+      this.setData({
+        images: this.data.images.concat(res.data),
+        page: this.data.page + 1,
+      });
+      console.log(this.data.images);
+    });
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    db.collection('picture').orderBy('time', 'asc').get().then( res => {
+    db.collection('picture').orderBy('time', 'desc').limit(20).get().then( res => {
       this.setData({
         images: res.data,
       })

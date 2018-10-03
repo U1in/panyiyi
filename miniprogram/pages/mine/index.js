@@ -43,14 +43,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.cloud.callFunction({
-      name: 'getInfo',
-      success: res => {
-        this.setData({
-          info: res.result,
-        })
-      }
-    })
+    
   },
 
   /**
@@ -64,7 +57,14 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    
+    wx.cloud.callFunction({
+      name: 'getInfo',
+      success: res => {
+        this.setData({
+          info: res.result,
+        })
+      }
+    })
   },
 
   /**

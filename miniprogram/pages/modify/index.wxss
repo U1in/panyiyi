@@ -8,6 +8,7 @@
   justify-content: flex-start;
   align-items: center;
   background: #e7e7e7;
+  overflow: auto;
 }
 my-modify {
   width: 100%;

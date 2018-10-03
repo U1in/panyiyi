@@ -15,6 +15,11 @@ Page({
   showMore (e) {
     db.collection('picture').orderBy('Plike', 'desc').orderBy('Pdownload', 'desc').skip(20 * this.data.page).limit(20).get().then(res => {
       console.log(res);
+      this.setData({
+        list: this.data.list.concat(res.data),
+        page: this.data.page + 1,
+      });
+      console.log(this.data.list);
     });
   },
   reflash() {
@@ -68,7 +73,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    
+    this.reflash();
   },
 
   /**

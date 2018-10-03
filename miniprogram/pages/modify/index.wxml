@@ -1,3 +1,4 @@
-<view class='container'>
+<scroll-view class='container' bindscrolltolower="showMore" scroll-y="{{true}}">
   <my-modify wx:for="{{images}}" wx:key="{{index}}" info="{{item}}"></my-modify>
-</view>
+  <my-hint text="已经到底了"></my-hint>
+</scroll-view>

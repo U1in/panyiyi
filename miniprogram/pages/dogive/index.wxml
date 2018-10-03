@@ -1,4 +1,4 @@
-<view class='container'>
+<scroll-view class='container' bindscrolltolower="showMore" scroll-y="{{true}}">
   <view class='search-container'>
     <input placeholder='输入搜索的内容' placeholder-class='search-placeholder' bindinput='inputSearch' bindconfirm='getResult'></input>
     <view class='search-button'>
@@ -8,4 +8,5 @@
   <view class='item-container'>
     <my-give wx:for="{{images}}" wx:key="{{index}}" item="{{item}}" badge="{{badge}}"></my-give>
   </view>
-</view>
+  <my-hint text="已经到底了"></my-hint>
+</scroll-view>
