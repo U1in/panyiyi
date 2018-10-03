@@ -4,15 +4,11 @@
   box-sizing: border-box;
   padding: 10px;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-.column {
-  height: 100%;
-  width: 28%;
-  margin: 0 10px;
-  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  background: #e7e7e7;
+}
+my-modify {
+  width: 100%;
 }

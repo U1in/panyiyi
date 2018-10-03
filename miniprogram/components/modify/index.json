@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "my-keyword": "../keyword/index"
+  },
+  "component": true
+}

@@ -14,7 +14,7 @@
   </view>
 
   <view class='menu-container'>
-    <view class='menu-item title'>作品编辑</view>
+    <view class='menu-item title'>作品相关</view>
     <view class='menu-item' bindtap='upload'>
       <view>
         <image src='../../static/upload.png'></image>
@@ -22,28 +22,32 @@
       </view>
       <view class='number'>{{info.images}}</view>
     </view>
-    <view class='menu-item'>
+    <view class='menu-item' bindtap='modify'>
       <view>
         <image src='../../static/modify.png'></image>
         编辑作品
       </view>
-      <view class='number'>{{info.images}}</view>
     </view>
     
-    <view class='menu-item title'>徽章编辑</view>
+    <view class='menu-item title'>徽章相关</view>
     <view class='menu-item' bindtap='create'>
       <view>
         <image src='../../static/upload.png'></image>
         创建徽章
       </view>
-      <view class='number'>10</view>
+      <view class='number'>{{info.badge}}</view>
     </view>
-    <view class='menu-item'>
+    <view class='menu-item' bindtap='bodify'>
       <view>
         <image src='../../static/modify.png'></image>
         编辑徽章
       </view>
-      <view class='number'>10</view>
+    </view>
+    <view class='menu-item' bindtap='give'>
+      <view>
+        <image src='../../static/m-badge.png'></image>
+        赋予徽章
+      </view>
     </view>
 
     <view class='menu-item title'>统计信息</view>

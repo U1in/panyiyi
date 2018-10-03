@@ -8,7 +8,14 @@
     "pages/upload/index",
     "components/keyword/index",
     "pages/badge/index",
-    "pages/create/index"
+    "pages/create/index",
+    "pages/modify/index",
+    "pages/bodify/index",
+    "components/modify/index",
+    "pages/give/index",
+    "components/badge/index",
+    "pages/dogive/index",
+    "components/give/index"
   ],
   "window": {
     "backgroundTextStyle": "dark",

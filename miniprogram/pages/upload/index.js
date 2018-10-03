@@ -44,7 +44,8 @@ Page({
             PURL: resp.data.url,
             DURL: resp.data.delete,
             Pdownload: 0,
-            Plike: 0
+            Plike: 0,
+            time: new Date().getTime(),
           };
           db.collection('picture').add({
             data: info
@@ -96,7 +97,7 @@ Page({
    * 删除标签函数
    */
   removeKeyWord (e) {
-    let index = e.target.dataset.index;
+    let index = e.currentTarget.dataset.index;
     this.data.keyWordArray.splice(index, 1);
     this.setData({
       keyWordArray: this.data.keyWordArray,
@@ -106,7 +107,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log(new Date().getTime());
   },
 
   /**

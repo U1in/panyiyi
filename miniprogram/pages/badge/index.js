@@ -9,7 +9,11 @@ Page({
     column2: [],
     column3: [],
   },
-
+  search (e) {
+    wx.navigateTo({
+      url: '../search/index?query=' + encodeURI('#'+ e.currentTarget.dataset.badge),
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -20,11 +24,6 @@ Page({
       })
       let data = res.data;
       for (let i = 0, j = 0, p = data.length - 1; j <= data.length - 1; j++) {
-        console.log(`
-        columns: ${((j % 3) + 1)}
-        i: ${i}
-        j: ${j}
-        p: ${p}`);
         if(j % 2 == 0) {
           this.data['column' + ((j % 3) + 1)].push(data[i]);
           i++;

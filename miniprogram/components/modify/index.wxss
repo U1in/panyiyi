@@ -1,0 +1,112 @@
+.item {
+  min-height: 100px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px;
+  background: white;
+  border-radius: 3px;
+  margin: 5px 0;
+}
+.show-container {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.image-container {
+  height: 100px;
+  width: 200px;
+}
+.button-container {
+  height: 100px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: #57a99a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  overflow: hidden;
+}
+.button image {
+  height: 30px;
+  width: 30px;
+}
+.warning {
+  background: rgb(206, 54, 54) !important;
+}
+.modify-container {
+  min-height: 80px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+.modify-container > .input {
+  height: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+}
+.input > input {
+  height: 100%;
+  flex-grow: 1;
+  box-sizing: border-box;
+  padding-left: 5px;
+  border-radius: 3px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border: 1px solid #e7e7e7;
+  border-right: none;
+  font-size: 14px;
+}
+.input > view {
+  height: 100%;
+  width: 70px;
+  box-sizing: border-box;
+  line-height: 30px;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+  background: #57a99a;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.placeholeder {
+  font-size: 12px;
+  padding-left: 5px;
+}
+.modify-bottom {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.key-container {
+  height: 100%;
+  width: 290px;
+  box-sizing: border-box;
+  padding: 5px 0;
+  background: #eeeeee;
+  border-radius: 5px;
+  overflow: auto;
+}

@@ -1,0 +1,27 @@
+<view class='item' wx:if="{{show}}">
+  <view class='show-container'>
+    <image src='{{info.PURL}}' mode='aspectFit'  class='image-container'></image>
+  <view class='button-container'>
+    <view bindtap='showModify' class='button'>
+      <image src='../../static/u-modify.png'></image>
+    </view>
+    <view bindtap='remove' class='button warning'>
+      <image src='../../static/u-delete.png'></image>
+    </view>
+  </view>
+  </view>
+  <view class='modify-container' wx:if="{{modifyShow}}">
+    <view class='input'>
+      <input placeholder='输入新的标签 优先主要标签' placeholder-class='placeholeder' bindinput='input' bindconfirm='addKeyWord' value='{{reset}}'></input>
+      <view bindtap='addKeyWord'>添加</view>
+    </view>
+    <view class='modify-bottom'>
+      <view class='key-container'>
+        <my-keyword wx:for="{{info.Desc}}" wx:key="{{index}}" wx:if="{{item[0] != '#'}}" text="{{item}}" data-index="{{index}}" bindtap="removeKeyWord"></my-keyword>
+    </view>
+    <view class='button' bindtap='modify'>
+      <image src='../../static/u-upload.png'></image>
+    </view>
+    </view>
+  </view>
+</view>

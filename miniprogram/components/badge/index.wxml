@@ -1,0 +1,4 @@
+<view class='badge-container'>
+  <my-badge text="#{{item.Bname}}"></my-badge>
+  <text>{{item.Bdesc}}</text>
+</view> 

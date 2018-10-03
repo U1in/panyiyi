@@ -1,0 +1,11 @@
+<view class='container'>
+  <view class='search-container'>
+    <input placeholder='输入搜索的内容' placeholder-class='search-placeholder' bindinput='inputSearch' bindconfirm='getResult'></input>
+    <view class='search-button'>
+      <image src='../../static/s-search.png'></image>
+    </view>
+  </view>
+  <view class='item-container'>
+    <my-give wx:for="{{images}}" wx:key="{{index}}" item="{{item}}" badge="{{badge}}"></my-give>
+  </view>
+</view>

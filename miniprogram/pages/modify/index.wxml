@@ -1,0 +1,3 @@
+<view class='container'>
+  <my-modify wx:for="{{images}}" wx:key="{{index}}" info="{{item}}"></my-modify>
+</view>

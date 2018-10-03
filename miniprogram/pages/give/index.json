@@ -1,5 +1,6 @@
 {
   "usingComponents": {
     "my-badge": "../../components/badge/index"
-  }
+  },
+  "navigationBarTitleText": "选择徽章"
 }
