@@ -1,0 +1,24 @@
+<view class='hot-item'>
+    <view class='title'>
+      <my-keyword wx:for="{{info.Desc}}" wx:key="{{index}}" text="{{item}}"></my-keyword>
+    </view>
+    <view class='image-container'>
+      <text>图片较大，正在加载...</text>
+      <image src='{{info.PURL}}' mode='aspectFill' lazy-load="{{true}}" bindtap='show'></image>
+    </view>
+    <view class='line'></view>
+    <view class='hot-button'>
+      <view class='button-item' bindtap='download'>
+        <image src='{{downloadFlag == 0 ? "../../static/download.png" : "../../static/b-download.png"}}'></image>
+        <text style='color: {{downloadFlag == 0 ? "#666" : "#b84949"}}'>{{info.Pdownload}}</text>
+      </view>
+      <view class='button-item' bindtap='like'>
+        <image src='{{likeFlag == 0 ? "../../static/like.png" : "../../static/b-like.png"}}'></image>
+        <text style='color: {{likeFlag == 0 ? "#666" : "#b84949"}}'>{{info.Plike}}</text>
+      </view>
+      <view class='button-item'>
+        <image src='../../static/repo.png'></image>
+        <text>反馈信息</text>
+      </view>
+    </view>
+  </view>

@@ -1,0 +1,13 @@
+<scroll-view class='container' scroll-y="{{true}}" bindscrolltolower="showMore" bindscroll="scroll" scroll-top="{{scrollTop}}" scroll-with-animation="{{true}}">
+
+  <my-item wx:for="{{list}}" info="{{item}}" wx:key="{{index}}"></my-item>
+
+  <my-hint text="已经到底了"></my-hint>
+
+  <view class='reflash' bindtap='reflash'>
+    <image src='../../static/reflash.png'></image>
+  </view>
+  <view class='to-top' wx:if="{{showTop}}" bindtap='scrollToTop'>
+    <image src='../../static/top.png'></image>
+  </view>
+</scroll-view>

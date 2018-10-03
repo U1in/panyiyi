@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "my-keyword": "../../components/keyword/index"
+  },
+  "navigationBarTitleText": "上传作品"
+}

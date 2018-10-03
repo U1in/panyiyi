@@ -1,0 +1,30 @@
+.container {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  background-color: #e7e7e7;
+  overflow: auto;
+}
+.reflash,
+.to-top {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  border-radius: 50%;
+  background: #b84949;
+}
+.reflash {
+  background: #57a99a;
+  bottom: 20px;
+}
+.reflash > image,
+.to-top > image {
+  height: 60%;
+  width: 60%;
+}

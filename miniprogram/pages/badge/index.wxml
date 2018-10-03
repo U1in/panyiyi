@@ -1,0 +1,20 @@
+<view class='container'>
+  <view class='column'>
+    <view class='badge-container' wx:for="{{column1}}" wx:key="{{index}}">
+      <my-badge text="#{{item.Bname}}"></my-badge>
+      <text>{{item.Bdesc}}</text>
+    </view>    
+  </view>
+  <view class='column'>
+    <view class='badge-container' wx:for="{{column2}}" wx:key="{{index}}">
+      <my-badge text="#{{item.Bname}}"></my-badge>
+      <text>{{item.Bdesc}}</text>
+    </view>    
+  </view>
+  <view class='column'>
+    <view class='badge-container' wx:for="{{column3}}" wx:key="{{index}}">
+      <my-badge text="#{{item.Bname}}"></my-badge>
+      <text>{{item.Bdesc}}</text>
+    </view>    
+  </view>
+</view>

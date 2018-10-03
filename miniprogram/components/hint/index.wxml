@@ -1,0 +1,5 @@
+<view class='hint-container'>
+    <view class='line'></view>
+    <view class='info'>{{text}}</view>
+    <view class='line'></view>
+</view>

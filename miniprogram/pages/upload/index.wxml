@@ -1,0 +1,16 @@
+<view class='container'>
+  <view class='image-container' bindtap='chooseImage'>
+    <image wx:if="{{tempFilePaths == ''}}" src='../../static/add.png' mode='aspectFit' class='button'></image>
+    <image wx:if="{{tempFilePaths != ''}}" src='{{tempFilePaths}}' mode='aspectFit' class='preimage'>></image>
+  </view>
+  <view class='add-container'>
+    <input placeholder='输入图片标签，先输入主要标签' placeholder-class='add-placeholder' bindinput='inputKeyword' value='{{keyWordString}}' bindconfirm='keyWordString2Array'></input>
+    <view bindtap='keyWordString2Array'>添加</view>
+  </view>
+  <view class='keyword-container'>
+    <my-keyword wx:for="{{keyWordArray}}" wx:key="{{index}}" text="{{item}}" bindtap="removeKeyWord" data-index="{{index}}"></my-keyword>
+  </view>
+  <view class='add-button {{tempFilePaths != "" && keyWordArray.length != 0 ? "" : "disable"}}' bindtap='upload'>
+    发布
+  </view>
+</view>

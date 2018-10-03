@@ -1,0 +1,3 @@
+<view class='keyword' style='background: {{text[0] == "#" ? "#b84949" : "#57a99a"}}'>
+  {{text}}
+</view>

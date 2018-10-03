@@ -1,0 +1,8 @@
+<view class='container'>
+  <input placeholder='徽章名' placeholder-class='.placeholder-style' bindinput='createName' value='{{reset}}'></input>
+  <textarea placeholder='徽章说明' placeholder-class='.placeholder-style' bindinput='createDesc' value='{{reset}}'></textarea>
+  <textarea placeholder='判定备注' placeholder-class='.placeholder-style' bindinput='createRemark' value='{{reset}}'></textarea>
+  <view class='add-button {{badgeName != "" && badgeDesc != "" && badgeRemark != "" ? "" : "disable"}}' bindtap='create'>
+    创建
+  </view>
+</view>

@@ -1,0 +1,49 @@
+{
+  "cloud": true,
+  "pages": [
+    "pages/home/index",
+    "pages/mine/index",
+    "pages/hot/index",
+    "pages/search/index",
+    "pages/upload/index",
+    "components/keyword/index",
+    "pages/badge/index",
+    "pages/create/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#57a99a",
+    "navigationBarTitleText": "盘一一",
+    "navigationBarTextStyle": "#76dbd1"
+  },
+  "networkTimeout": {
+    "request": 10000
+  },
+  "tabBar": {
+    "backgroundColor": "#57a99a",
+    "color": "#76dbd1",
+    "selectedColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "iconPath": "static/home.png",
+        "selectedIconPath": "static/s-home1.png",
+        "pagePath": "pages/home/index",
+        "text": "首页"
+      },
+      {
+        "iconPath": "static/hot.png",
+        "selectedIconPath": "static/s-hot.png",
+        "pagePath": "pages/hot/index",
+        "text": "热门"
+      },
+      {
+        "iconPath": "static/badge.png",
+        "selectedIconPath": "static/s-badge.png",
+        "pagePath": "pages/badge/index",
+        "text": "徽章"
+      }
+    ]
+  }
+}

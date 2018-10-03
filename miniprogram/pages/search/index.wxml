@@ -1,0 +1,10 @@
+<scroll-view class='container'>
+  <view class='search-container'>
+    <input placeholder='输入搜索的内容' placeholder-class='search-placeholder' value='{{query}}' bindinput='inputSearch' bindconfirm='getResult'></input>
+    <view class='search-button'>
+      <image src='../../static/s-search.png'></image>
+    </view>
+  </view>
+  <my-item wx:for="{{resultList}}" wx:key="{{index}}" info="{{item}}" class="my-component"></my-item>
+  <my-hint text="已经到底了" class="my-component"></my-hint>
+</scroll-view>

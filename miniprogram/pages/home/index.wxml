@@ -1,0 +1,16 @@
+<view class='container'>
+  <image src='../../static/logo.png' mode="aspectFit" class='logo' bindtap='useless'></image>
+  <view class='input-item'>
+    <input bindinput='inputKeyword' bindconfirm='search' placeholder='主要标签+空格+细分标签 例:为所欲为 原版'></input>
+    <view bindtap='search' confirm-type='查找'>
+      <image src='../../static/search.png'></image>
+    </view>
+  </view>
+  <!-- <button open-type="getUserInfo" style='height: 30px;width: 200px; margin:20px;line-height:30px;font-size:14px;' bindgetuserinfo="userInfo">获取授权</button> -->
+  <!-- <view class='hot-search'>
+    <text class='word-hot-search'>热门搜索：</text>
+    <text>全员恶人</text>
+    <text>为所欲为</text>
+    <text>楼楼</text>
+  </view> -->
+</view>

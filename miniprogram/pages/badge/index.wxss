@@ -1,0 +1,32 @@
+.container {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.column {
+  height: 100%;
+  width: 28%;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.badge-container {
+  height: auto;
+  width: 100%;
+  margin: 5px 0;
+  background: #57a99a;
+  color: #ffffff;
+  box-shadow: 0 0 3px gray;
+  border-radius: 5px;
+  padding: 5px;
+  /* break-inside: avoid; */
+}
+.badge-container > text {
+  font-size: 14px;
+}
